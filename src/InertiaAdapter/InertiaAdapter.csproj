@@ -1,17 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <Version>0.0.4</Version>
-    <PackageId>INERTIAJS.ASPNETCORE.ADAPTER</PackageId>
-    <Authors>AndySong</Authors>
+    <Version>0.0.5</Version>
+    <PackageId>Inertia.AspNetCore.Adapter</PackageId>
+    <Authors>AntiGuide,AndySong</Authors>
     <Description>The AspNetCore adapter for Inertia.js. https://inertiajs.com</Description>
-    <PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Nothing-Works/inertia-aspnetcore</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AntiGuide/inertia-aspnetcore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AntiGuide/inertia-aspnetcore</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>AspNetCore, Inertia.js, Adapter</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageVersion>0.0.5</PackageVersion>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
