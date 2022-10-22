@@ -5,16 +5,13 @@ on:
       - master
 jobs:
   publish:
-    name: build, pack & publish
+    name: Build, pack & publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 5
-      - name: publish on version change
+      - name: Publish on version change
         id: publish_nuget
-        uses: brandedoutcast/publish-nuget@v2
+        uses: alirezanet/publish-nuget@v3
         with:
           PROJECT_FILE_PATH: src/InertiaAdapter/InertiaAdapter.csproj
           TAG_FORMAT: "*"
